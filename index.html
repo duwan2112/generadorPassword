@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>   DUWAN FORTUNATO PEÑA <br> 
+          <div class=" title"> Password Generator </div>
+        </header>
+       <form action="" class="app" id="app">
+           <div class="row">
+
+             <div class="col-12 caracteres">
+                 <div class="row caracter">
+                     <div class=" col-10 col-md-6  d-flex align-items-center  pl-md-5"> <label for="caracteres">Numero de caracteres:</label> </div>
+                     <div class="col-7 col-md-4  opcion">   
+                    <div class="row opc d-flex">
+                        <div class="col-4 d-flex justify-content-center simbols"><button id="btn-mas" class="btn2 "><i  class="fa fa-plus"></i></button></div>
+                        <div  class="col-4 d-flex align-items-center justify-content-center"> <input readonly class="content" type="text" id="caracter-date" value="10" > </div>
+                        <div class="col-4  d-flex justify-content-center simbols"><button id="btn-menos" class="btn2 "><i class="fa fa-minus"></i></button></div>
+                    </div>
+                    
+                        </div>
+                 </div>
+             </div>
+             <div class="col-12 simbolos ">
+                <div class="row caracter">
+                    <div class="col-10 col-md-6  d-flex align-items-center  pl-md-5"> <label for="simbolos">Incluir Simbolos?</label> </div>
+                    <div class="col-7 col-md-4 d-flex align-items-center opcion"> <button id="btn-simbolos" class="btn3 "><i id="img1" class="fa fa-check"></i></button></div>
+                </div>
+            </div>        
+            <div class="col-12 numeros">
+                <div class="row caracter">
+                    <div class="col-10 col-md-6  d-flex align-items-center  pl-md-5"> <label for="numeros">Incluir Numeros?</label></div>
+                    <div class="col-7 col-md-4 d-flex align-items-center opcion"> <button id="btn-numeros" class="btn3 "><i id="img2"  class="fa fa-check"></i></button> </i></div>
+                </div>
+            </div>        
+            <div class="col-12 mayusculas">
+                <div class="row caracter">
+                    <div class=" col-10 col-md-6  d-flex align-items-center  pl-md-5"> <label for="mayusculas">Incluir Mayusculas?</label></div>
+                    <div class=" col-7 col-md-4 d-flex align-items-center opcion"> <button id="btn-mayusculas" class="btn3 "><i id="img3" class="fa fa-check"></i></button></div>
+                </div>
+            </div>       
+             <div class="col-12 generador">
+                <div class="row ">
+                    <div class="col-6 col-md-5 primera d-flex align-items-center  pl-md-5"> <button id="btn-generado" class="btn btn-generador btn-block">Generar <i class="fas fa-lock"></i></button></div>
+                    <div class="col-6 col-md-4 offset-md-1 d-flex align-items-center ">  
+                       <input class="input-password" id="input-password" readonly type="text" value="  Tu Password"> 
+                    </div>
+                </div>
+                
+            </div>
+            <div id="file" class="col-12 file active alerta">
+                  <div id="alerta-copiado" class="alerta-copiado ">  <p> <i class="fas fa-copy"></i> Clave generada</p></div>   
+             </div>
+           </div>
+       </form>
+    </div>
+    
+    <script src="vendor/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

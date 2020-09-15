@@ -1,0 +1,137 @@
+* 
+    box-sizing: border-box
+    padding: 0 
+    margin: 0
+*::selection
+    background: rgba(#fff,0.1)
+
+//font-family: 'Roboto', sans-serif    
+//font-family: 'Chelsea Market', cursive  
+body 
+    font-family: 'Chelsea Market', cursive  
+    background: #181A40
+
+.container 
+    color: #fff
+    max-width: 700px
+    width: 100%    
+    margin: 40px auto
+    header
+        text-align: center 
+        font-size: 40px
+        .title
+            padding-top: 10px
+            font-size: 20px
+            font-family: normal
+            font-weight: 500
+            opacity: 0.8
+    .app 
+        color: rgba(white,0.8 )
+        padding-top: 50px 
+        font-family: 'Roboto', sans-serif
+        letter-spacing: 0.07rem
+        .simbolos,.numeros,.generador,.caracteres,.mayusculas
+            min-height: 10vh
+            .caracter
+               min-height: 70%
+        .opcion
+            .btn3
+                padding: 10px 0px
+                position: relative
+                background: none 
+                border: none
+                height: 100%
+                width: 100%
+            .btn3:focus 
+                outline: none    
+            .opc
+                background: #3C2D9C
+                height: 100%
+                border-radius: 5px
+                .content
+                    position: relative
+                    width: 100%
+                    height: 100%
+                    background: none
+                    border: none
+                    text-align: center
+                    color: rgba(white, 0.8 )
+                .content:focus
+                    outline: none                
+                .simbols
+                  background: #3F56D9
+                  opacity: 0.5
+                  border-radius: 2px               
+                  .btn2
+                      padding: 10px 0px
+                      background: none
+                      border: none
+                      position: relative
+                      width: 100%
+                      height: 100%
+                      color: white
+                  .btn2:focus
+                       outline: none   
+                .simbols:hover
+                  background: #6030A6
+                  border: none
+                  .fa
+                      color: black
+
+        .opcion,.btn-generador 
+            justify-content: center
+            border-radius: 5px
+            background: #3C2D9C
+            box-shadow: 1px 0px 10px black 
+            .fa-check,.fa-times
+                color: rgba(white,0.8 )
+        .opcion:hover,.btn-generador:hover
+            background: #6030A6
+            .fa-check
+                color: black        
+        .generador
+            padding-top: 50px        
+            .btn-generador
+              color: rgba(white,0.6 )
+              position: relative
+              i 
+                  padding-left: 3px
+                  font-size: 12px 
+                  position: relative
+                  top: -1px              
+            .btn-generador:after
+                content: ""
+                display: inline-block 
+                width: 14px
+                height: 16px     
+                background: inherit
+                transform: rotate(45deg)
+                position: absolute 
+                top: 10px 
+                right: -7px
+            .input-password
+                color: rgba(white,0.5)
+                padding-left: 10px
+                width: 100%
+                height: 100%
+                background: none
+                border: 0px solid gray
+                border-bottom: 2px solid #6030A6
+                border-radius: 1px   
+                cursor: pointer   
+                outline: none    
+        .file
+            color: rgba(white,0.6)
+            text-align: center
+            padding-top: 30px
+        .file.active
+            color: rgba(white,0)    
+
+    @media screen and ( max-width: 765px  )
+         .simbolos,.numeros,.generador,.caracteres,.mayusculas
+            .row 
+                justify-content: center
+                .col-10
+                    justify-content: center
+                    padding-top: 30px
+
